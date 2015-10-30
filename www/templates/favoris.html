@@ -9,7 +9,7 @@
 
 				<h2>{{item.nom}}</h2>
 				
-				<ion-option-button class="button-info" ng-click="del(item)" style="background: #CC0000; color: white;">
+				<ion-option-button class="button-info" ng-click="itemsFav.splice($index, 1); delFav($index)" style="background: #CC0000; color: white;">
 					Del
 				</ion-option-button>
 				
