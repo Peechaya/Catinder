@@ -9,7 +9,7 @@
 
                 
 
-                <ion-option-button class="button-info" ng-click="del(item)" style="background: #CC0000; color: white;">
+                <ion-option-button class="button-info" ng-click="itemsBlk.splice($index, 1); delBlacklist($index)" style="background: #CC0000; color: white;">
                     Del
                 </ion-option-button>
 
@@ -28,6 +28,6 @@
     </ion-content>
 
     <div class="bar bar-footer bar-positive">
-  <div class="title"><a class="button button-positive" style="display:block;border:none;" ng-click="reinit(item)">Réinitialiser</a></div>
+  <div class="title"><a class="button button-positive" style="display:block;border:none;" ng-click="itemsBlk.splice($index, catObject.blacklist.length); ReinitBlacklist($index)">Réinitialiser</a></div>
 </div>
 </ion-view>
