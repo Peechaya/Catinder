@@ -13,7 +13,7 @@
                     Del
                 </ion-option-button>
 
-                <ion-option-button class="button-positive" ng-click="fav(item)">
+                <ion-option-button class="button-positive" ng-click="itemsBlk.splice($index, 1); MoveFav($index)">
                     Fav
                 </ion-option-button>
 
